@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* Navigation Menu */
+nav {
+  background-color: #6b4f4f;
+  padding: 10px 0;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin: 0 20px;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  color: #a05252;
+}
+
+/* Recipe Section */
+.recipe {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  flex-direction: column; /* Allow button to go to the bottom */
+}
+
+.recipe-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+/* Card Styling */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.recipe-large-image {
+  width: 100%;
+  max-width: 450px; /* Image size adjustment */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Card */
+.image-card {
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+/* Ingredients Card */
+.ingredients-card {
+  flex: 1 1 30%;
+  padding: 15px;
+}
+
+.ingredients-card h2 {
+  color: #6b4f4f;
+  font-size: 1rem;
+}
+
+ul {
+  margin: 10px 0;
+  padding-left: 20px;
+  font-size: 0.9rem;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* Steps Card */
+.steps-card {
+  flex: 1 1 30%;
+  padding: 15px;
+}
+
+.steps-card h2 {
+  color: #6b4f4f;
+  font-size: 1rem;
+}
+
+ol {
+  margin: 10px 0;
+  padding-left: 20px;
+  font-size: 0.9rem;
+}
+
+li {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+/* Learn More Button */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #6b4f4f;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #a05252;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #f0f0f0;
+  color: #666;
+  font-size: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  border-top: 1px solid #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .recipe-wrapper {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .image-card, .ingredients-card, .steps-card {
+    flex: 1 1 90%;
+    margin-bottom: 20px;
+  }
+
+  .recipe-large-image {
+    max-width: 100%;
+  }
+}
